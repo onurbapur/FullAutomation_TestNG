@@ -11,20 +11,20 @@ public class Ders04_NavigateTo {
 
         driver.get("https://www.google.com");
 
-        Thread.sleep(2);  //2 saniye bekler
+        Thread.sleep(2000);  //2 saniye bekler
 
         driver.navigate().to("https://www.youtube.com"); // yteni bir url e gider
 
-        Thread.sleep(2);
+        Thread.sleep(2000);
         driver.navigate().back(); // önceki sayfaya gider
 
-        Thread.sleep(2);
+        Thread.sleep(2000);
         driver.navigate().forward(); // sayfayı ileri alır
 
-        Thread.sleep(2);
+        Thread.sleep(2000);
         driver.navigate().refresh();  // Sayfayı yeniler
 
-        Thread.sleep(2);
+        Thread.sleep(2000);
         driver.close();
     }
 }

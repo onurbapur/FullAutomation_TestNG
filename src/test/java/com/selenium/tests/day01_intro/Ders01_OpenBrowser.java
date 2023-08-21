@@ -7,14 +7,20 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Ders01_OpenBrowser {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
+
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
+
+
+
         driver.get("https://www.google.com");
+
+
         ((JavascriptExecutor) driver).executeScript("window.open()"); // yeni pencere açar
         driver.get("https://www.youtube.com"); // yeni pencere açılsa da aktif pencere değişmez
-
-        driver.quit();  //  driver tüm pencereleriyle kapanır..
-      //  driver.close(); //aktif olan pencereyi kapatır. driver kapalı pencerede kalır
+Thread.sleep(3000);
+         driver.quit();  //  driver tüm pencereleriyle kapanır..
+        //  driver.close(); //aktif olan pencereyi kapatır. driver kapalı pencerede kalır
     }
 }

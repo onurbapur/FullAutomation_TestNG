@@ -27,7 +27,7 @@ public class Ders03_NewWindowHandle {
         }
 
         driver.get("https://www.youtube.com");
-        driver.close();
+       //driver.close();
 
         driver.switchTo().window(currentId);
         driver.get("https://www.youtube.com");
