@@ -19,5 +19,16 @@ public class Ders11_RelativeXPath {
         // ---> //*[@id="nav-link-accountList"]   id attribute değeri "nav-link-accountList" olan her tagı(elementi) bulur
         // ---> //*[@*="nav-link-accountList"]
 
+
+        /*
+         * //h2[text()="Forgot Password"]
+         * //label[text()="E-mail"]
+         * //label[@for="email"]
+         * //input[@id="email"]
+         * //button[@id="form_submit"]
+         * //div[contains(text(),"by ")]
+         * //a[starts-with(text(),'E')]
+
+         * */
     }
 }
